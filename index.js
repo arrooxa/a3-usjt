@@ -28,4 +28,4 @@ app.post('/ask-gpt', async (req, res) => {
     res.json({completion: completion.choices[0].message.content})
 })
 
-app.listen(PORT, () => console.log(`Em execução na porta ${PORT}.`))
+app.listen(PORT, () => console.log(`The application is running in ${PORT} port.`))
