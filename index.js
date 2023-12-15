@@ -20,7 +20,7 @@ function defineGptSettings(prompt){
     }
 };
 
-app.post('/pergunte-ao-chatgpt', async (req, res) => {
+app.post('/ask-gpt', async (req, res) => {
     const { prompt } = req.body
     
     const completion = await openai.chat.completions.create(defineGptSettings(prompt));
